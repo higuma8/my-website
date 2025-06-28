@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // エラーがない場合、メール送信
     if (empty($errors)) {
         // 送信先メールアドレス
-        $to = 'bikebear8@gmail.com'; // ここを実際のメールアドレスに変更
+        $to = 'higumakingyo@gmail.com'; // ここを実際のメールアドレスに変更
         
         // メール件名
         $mail_subject = '[お問い合わせ] ' . $subject;
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // メールヘッダー
         $headers = [
-            'From: ' . $email,
+            'From: higumakingyo@gmail.com', // ドメインのメールに変更
             'Reply-To: ' . $email,
             'Content-Type: text/plain; charset=UTF-8'
         ];
@@ -88,11 +88,11 @@ function send_auto_reply($email, $name) {
     $body .= "お手数ですが再度ご連絡ください。\n\n";
     $body .= "────────────────────\n";
     $body .= "お問い合わせ窓口\n";
-    $body .= "Email: bikebear8@gmail.com\n";
+    $body .= "Email: higumakingyo@gmail.com\n";
     $body .= "────────────────────\n";
     
     $headers = [
-        'From: bikebear8@gmail.com',
+        'From: higumakingyo@gmail.com',
         'Content-Type: text/plain; charset=UTF-8'
     ];
     
