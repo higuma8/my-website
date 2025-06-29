@@ -1,0 +1,651 @@
+/* 共通 */
+body{
+  background-color: #f9f9f9;
+  width: 100%;
+  font-family: Helvetica, "YuGothic";
+  position: relative;
+  line-height: 150%;
+  font-weight: nomal;
+}
+.bold {
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.text-16x{
+  font-size: 16px;
+}
+.text-18x{
+  font-size: 18px;
+  line-height: 170%;
+  font-weight: bold;
+}
+.text-20x{
+  font-size: 20px;
+  line-height: 170%;
+}
+.text-28x{
+  font-size: 28px;
+  line-height: 170%;
+  font-weight: bold;
+}
+.text-32x{
+  font-size: 32px;
+  line-height: 170%;
+  font-weight: bold;
+}
+.pd32px{
+  padding-bottom: 32px;
+}
+.pc{
+  display: block;
+}
+.sp{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+  .text-18x{
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: bold;
+  }
+  .text-20x{
+  font-size: 18px;
+  }
+  .text-28x{
+    font-size: 20px;
+  }
+  .text-32x{
+  font-size: 24px;
+  line-height: 170%;
+  font-weight: bold;
+  }
+}
+/* 共通 */
+
+/* ヘッダー */
+.header{
+  max-width:1360px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+/* ヘッダー */
+
+/*キービジュアル*/
+.hero {
+  width: 100%;
+  height: 1062px;
+  left: 0;
+  background-image: url(../img/bg-1.png);
+  background-size: 100% 100%;
+  background-size: cover;
+  text-shadow: 0px 4px 24px #00000073;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0 16px;
+}
+.hero .hero-title {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 32px;
+  line-height: 1.5;
+}
+.hero .text-18x{
+  padding-bottom: 32px;
+  text-shadow: 0px 0px 5px #00000073;
+}
+.hero .hero-text{
+  max-width:730px;
+  margin: 250px auto;
+  text-align: center;
+}
+.hero .text-20x{
+  padding-bottom: 32px;
+  text-shadow: 0px 0px 5px #00000073;
+}
+.hero .hero-btn {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--x-1d-5-8bd);
+  -webkit-transition: all 0.3s ease;
+}
+.hero .hero-btn:hover{
+  background: #1D58BD;
+  color: #fff;
+}
+.hero .btn-text {
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "YuGothic-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 32.4px;
+  white-space: nowrap;
+  text-shadow: none;
+}
+.hero .note{
+  max-width:1400px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    height: auto;
+    padding-bottom: 150px;
+  }
+  .hero .hero-btn {
+    width: 100%;
+  }
+    .hero .hero-text {
+    margin: 140px auto 60px;
+  }
+}
+/*キービジュアル*/
+
+
+
+
+.inner-box{
+  max-width:1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+/*コンテナ*/
+.container{
+  background-color: #fff;
+  padding: 100px 60px;
+  margin: 60px 0;
+  border-radius: 20px;
+}
+.container .text-32x{
+  padding-bottom: 40px;
+}
+.container .text-16x{
+  padding-bottom: 60px;
+  line-height: 210%;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+}
+
+.feature-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+.feature-card .text-18x{
+  text-align: center;
+  padding:8px 0 12px 0;
+}
+.feature-card .text-16x{
+  padding-bottom: 0;
+  line-height: 200%;
+}
+
+
+@media screen and (max-width: 768px) {
+.container {
+    padding: 32px 20px;
+  }
+.container .text-32x {
+    padding-bottom: 20px;
+}
+.features-grid {
+    display: block;
+  }
+.feature-card {
+    padding-bottom: 24px;
+}
+}
+
+/*コンテナ*/
+
+/* コスト */
+.cost-container{
+  text-align: center;
+  margin: 100px auto;
+}
+.cost-container .text-18x{
+  padding-bottom: 24px;
+}
+.cost-container .text-32x{
+  padding-bottom: 24px;
+}
+.cost-container .text-16x{
+  padding-bottom: 24px;
+  line-height: 200%;
+}
+.house-image{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-position: center;
+  border: 3px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+.banner-text {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  background-color: #ffffff;
+  border: 1px solid #050505;
+  border-radius: 50px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  margin: -32px auto 60px;
+}
+.banner-text.text-18x{
+  padding: 12px 20px;
+}
+.cost-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.cost-card{
+  background: #fff;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+.cost-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 32px 0;
+}
+.flag-image{
+  border: 3px solid #E1E1E1;
+  max-width: 120px;
+  border-radius: 5px;
+  margin: -62px 0 0;
+}
+.cost-total-text{
+  padding-bottom:40px;
+  font-weight: bold;
+}
+.cost-total-image{
+  width: 100%;
+  max-width: 910px;
+  margin-bottom: 60px;
+}
+.note{
+  font-size: 12px;
+  color: #757575;
+  text-align: left;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .cost-container {
+      margin: 60px auto;
+  }
+  .cost-container .text-16x {
+    text-align: left;
+  }
+  .cost-grid {
+    display: block;
+    }
+  .cost-image {
+    padding: 0 16px;
+  }
+}
+/* コスト */
+
+
+/* 投資する理由 */
+.container-inner{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.text-box {
+    display: grid;
+    grid: none;
+    align-content: center;
+}
+.container-inner .reason-image {
+  width: 100%;
+  max-width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .container-inner {
+    display: block;
+  }
+}
+/* 投資する理由 */
+
+
+
+/* 株式会社かぜだから、できること */
+.why {
+  width: 100%;
+  left: 0;
+  background-image: url(../img/bg-2.png);
+  background-size: 100% 100%;
+  background-size: cover;
+  text-shadow: 0px 4px 24px #00000073;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 160px 16px;
+  text-align: center;
+  font-weight: normal;
+}
+.why .text-20x{
+  padding: 20px 0;
+  line-height: 280%;
+}
+@media screen and (max-width: 768px) {
+  .why{
+  padding: 60px 16px;
+  }
+  .why .text-20x {
+    line-height: 170%;
+  }
+}
+/* 株式会社かぜだから、できること */
+
+
+
+
+/* アメリカ不動産の種類別価格帯 */
+.property-type-prices{
+  text-align: center;
+  margin: 100px auto 200px;
+}
+.property-type-prices .text-32x{
+  margin-bottom: 40px;
+}
+.property-type-prices .text-28x{
+  text-align: left;
+}
+.property-type-prices .text-18x{
+  text-align: left;
+}
+.property-type-prices-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .property-type-prices {
+    margin: 100px auto 60px;
+  }
+  .property-type-prices-grid {
+      display: block;
+  }
+  .property-type-prices-card {
+    padding-bottom: 32px;
+  }
+}
+/* アメリカ不動産の種類別価格帯 */
+
+
+/* アメリカ不動産の主な取り扱いエリア */
+
+.property-area-list .title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.property-area-list-grid{
+    display: flex;
+    gap: 40px;
+}
+.property-area-list-image{
+  width: 100%;
+  max-width: 500px;
+}
+.property-area-list .text-16x{
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+.property-area-list-grid{
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 0;
+}
+.property-area-list-image{
+  order: -1;
+  padding-bottom: 12px;
+}
+.property-area-list-grid .text-18x{
+  padding-bottom: 8px;
+}
+}
+/* アメリカ不動産の主な取り扱いエリア */
+
+
+
+
+/* フォーム */
+.form-container {
+    max-width: 800px;
+    margin: 60px auto 0;
+    background: white;
+    padding: 80px;
+    border-radius: 8px;
+}
+.form-container .text-32x{
+    text-align: center;
+    padding-bottom: 32px;
+}
+.form-container .text-16x{
+    line-height: 170%;
+}
+.form-group {
+    margin-bottom: 32px;
+}
+
+.label {
+    display: inline-block;
+    background-color: #0066CC;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.label-text {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0066CC;
+    background-color: white;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.radio-item:hover {
+    background-color: #e3f2fd;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #0066CC;
+}
+
+.radio-item input[type="radio"]:checked + label {
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.radio-item.selected {
+    background-color: #e3f2fd;
+    border-color: #0066CC;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.checkbox-item:hover {
+    background-color: #e3f2fd;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #0066CC;
+}
+
+.checkbox-item.checked {
+    background-color: #e3f2fd;
+    border-color: #0066CC;
+}
+
+.privacy-notice {
+    margin: 20px 0;
+}
+
+.privacy-notice.text-16x {
+    padding: 0;
+}
+
+.privacy-link {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 200px;
+    padding: 15px;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    background-color: #DBDBDB;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.privacy-notice-hr{
+  margin: 32px auto;
+}
+.form-container .text-16x.bold{
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.form-container{
+  padding: 32px 16px;
+}
+.form-container .text-32x {
+  padding-bottom: 24px;
+}
+
+  
+}
+ /* フォーム */
+
+
+ /* フッター*/
+.footer{
+  text-align: center;
+  padding: 60px 0;
+}
+.footer-link{
+  color: #0066CC;
+}
